@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Remit</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="../src/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-white fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center py-4">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-4">
+                <img src="../images/logo.png" alt="VeloxPays Logo" class="" width="100px" />
+                <nav class="hidden md:flex space-x-4">
+                    <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                        onmouseout="this.children[1].style.display = 'none';">
+                        <button class="flex items-center text-gray-600 hover:text-gray-900">
+                            Send Money
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                        onmouseout="this.children[1].style.display = 'none';">
+                        <button class="flex items-center text-gray-600 hover:text-gray-900">
+                            Track Your Transfer
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                        </div>
+                    </div>
+                    <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                        onmouseout="this.children[1].style.display = 'none';">
+                        <button class="flex items-center text-gray-600 hover:text-gray-900">
+                            Products
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Navigation Links for Desktop -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="text-gray-700 ">Help center</a>
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Company
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Optional Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                    </div>
+                </div>
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Impact Hub
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Optional Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-blue-700">Login</a>
+                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</a>
+            </div>
+
+            <!-- Burger Icon for Mobile -->
+            <button class="md:hidden text-black" id="burger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" id="burger-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 hidden" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" id="close-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md hidden z-40">
+            <div class="flex flex-col items-center space-y-4 py-6">
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Products
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Products
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Products
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    </div>
+                </div>
+                <a href="#" class="p-4 text-gray-600 hover:text-gray-900">Help Center</a>
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Products
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    </div>
+                </div>
+                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';"
+                    onmouseout="this.children[1].style.display = 'none';">
+                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                        Products
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    </div>
+                </div>
+                <a href="#" class="p-4 text-blue-500 hover:text-blue-700">Login</a>
+                <a href="#" class="p-4 bg-blue-500 text-white rounded hover:bg-blue-700">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+
+        <section class="min-h-screen h-auto   bg-[#fff] text-white pt-120 bg-cover bg-no-repeat pb-6"
+            style="background-image: url('../images/vector-home.png')">
+            <div class="container mx-auto px-4">
+                <!-- Left Section -->
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="text-left space-y-4 lg:w-full">
+                        <h1 class="text-3xl lg:text-5xl font-bold text-black">Your <span class="text-white"> money work
+                            </span> better <br> when it’s all in <span class="text-white"> one app. </span> </h1>
+                        <img src="../images/tag-line.png" alt="" class="">
+                        <form class="relative lg:w-1/2 bg-[#7DBBF4] px-5 py-2.5 rounded-lg">
+                            <div class=" relative mt-2">
+                                <label for="amount" class="block text-sm font-medium text-black px-2">SEND MONEY</label>
+                                <div class="flex items-center  rounded-[20px] mt-2 relative bg-gray-50">
+                                    <input type="text" id="amount" placeholder=" ₵ 2500"
+                                        class="w-full text-[22px] bg-gray-50 px-3 py-3  text-gray-800 focus:outline-none rounded-[20px] " />
+                                    <button type="button" id="currency-button"
+                                        class="inline-flex items-center bg-gray-50 px-4 py-4 rounded-r-[20px]  focus:outline-none relative w-full max-w-max"
+                                        onclick="toggleDropdown('currency-dropdown')">
+                                        <img src="../images/money-flag/ghana.png" alt="GHS Flag" class="h-8 mr-2"
+                                            id="selected-flag" />
+                                        <span id="selected-currency" class="text-sm font-medium mr-2 text-[#003C74]">GHS</span>
+                                        <svg id="dropdown-icon" class="w-5 h-5 text-[#003C74] ml-2 transition-transform transform"
+                                            fill="currentColor" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+            
+                                </div>
+            
+                                <!-- Currency Dropdown -->
+                                <div id="currency-dropdown"
+                                    class="hidden absolute top-full left-0 w-full border border-gray-300 bg-[#003C74] rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
+                                    <div class="p-2">
+                                        <input type="text" id="currency-search" placeholder="Search currency..."
+                                            class="w-full px-3 py-2 border rounded-md focus:outline-none"
+                                            oninput="filterDropdown('currency-dropdown', 'currency-search')" />
+                                    </div>
+                                    <ul class="divide-y divide-gray-200">
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                        onclick="selectCurrency('../images/money-flag/australia.png', 'GHS')">
+                                        <img src="../images/money-flag/ghana.png" alt="GHS Flag" class="h-8 mr-2" />
+                                        <span>GHS - Ghanaian Cedi</span>
+                                    </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/australia.png', 'AUD')">
+                                            <img src="../images/money-flag/australia.png" alt="AUD Flag" class="h-8 mr-2" />
+                                            <span>AUD - Australian Dollar</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/bangladesh.png', 'BDT')">
+                                            <img src="../images/money-flag/bangladesh.png" alt="BDT Flag" class="h-8 mr-2" />
+                                            <span>BDT - Bangladeshi Taka</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/india.png', 'INR')">
+                                            <img src="../images/money-flag/india.png" alt="INR Flag" class="h-8 mr-2" />
+                                            <span>INR - Indian Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/pakistan.png', 'PKR')">
+                                            <img src="../images/money-flag/pakistan.png" alt="PAK Flag" class="h-8 mr-2" />
+                                            <span>PKR - Pakistani Rupee </span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/nepal.png', 'NPR')">
+                                            <img src="../images/money-flag/nepal.png" alt="NGN Flag" class="h-8 mr-2" />
+                                            <span>NPR - Nepalese Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
+                                            <img src="../images/money-flag/sri-lanka.png" alt="LKR Flag" class="h-8 mr-2" />
+                                            <span>LKR - Sri Lankan Rupee</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/malaysia.png', 'MYR')">
+                                            <img src="../images/money-flag/malaysia.png" alt="MYR Flag" class="h-8 mr-2" />
+                                            <span>MYR - Malaysian Ringgit</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/phillipine.png', 'PHP')">
+                                            <img src="../images/money-flag/phillipine.png" alt="PHP Flag" class="h-8 mr-2" />
+                                            <span>PHP - Philippine Peso</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/viatnam.png', 'VND')">
+                                            <img src="../images/money-flag/viatnam.png" alt="VND Flag" class="h-8 mr-2" />
+                                            <span>VND - Vietnamese Dong</span>
+                                        </li>
+                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer"
+                                            onclick="selectCurrency('../images/money-flag/fiji.png', 'FJD')">
+                                            <img src="../images/money-flag/fiji.png" alt="FJD Flag" class="h-8 mr-2" />
+                                            <span>FJD - Fijian dollar</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                        <button class="lg:w-1/2 w-full bg-[#AFD6F7] text-black text-lg font-medium py-4 mt-6 rounded-lg hover:bg-[#003C74] hover:text-[#fff]">
+                            Check Rates
+                          </button>
+                          <div class="bg-[#7DBBF4] rounded-lg p-4 text-white lg:w-1/2  my-4">
+                            <div class="flex  mb-4">
+                              <span class="font-bold text-[#003C74] ">Download App</span>
+                              <div class="flex items-center">
+                                <img src="../images/social-apple.png" alt="" class="">
+                                <img src="../images/social-playstore.png" alt="" class="">
+                              </div>
+                            </div>
+                            <div class="flex space-x-2 mb-4">
+                              <button class="bg-[#AFD6F7] hover:bg-blue-800 hover:text-white text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">SMS</button>
+                              <button class=" border-black hover:bg-blue-800 hover:text-white text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Email</button>
+                            </div>
+                            <div class="mb-4">
+                                <div class="mt-1 flex  border border-gray-300 rounded-md shadow-sm">
+                                  <div class="relative flex-shrink-0">
+                                    <button type="button" class="flex items-center px-4 pr-8 py-2   focus:outline-none"
+                                      onclick="toggleCountryCodeList(event)">
+                                      <img id="phone-flag" src="../images/money-flag/ghana.png" alt="India" class="w-6 h-6 mr-2">
+                                      <span id="country-code">+233</span>
+                                    </button>
+                                    <!-- Country Code Dropdown -->
+                                    <div id="country-code-list"
+                                      class="absolute z-10 bg-[#003C74] border rounded-md mt-1 max-h-40 overflow-y-auto hidden">
+                                      <input type="text"
+                                        class="w-full px-5  py-2 border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        placeholder="Search..." onkeyup="filterCountryCodes(event)">
+                                      <ul class="mt-2" id="country-code-options">
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+233" data-flag="../images/money-flag/ghana.png">
+                                          <img src="../images/money-flag/ghana.png" alt="ghana" class="w-10 h-10 mr-2"> +233
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+91" data-flag="../images/money-flag/india.png">
+                                          <img src="../images/money-flag/india.png" alt="India" class="w-10 h-10 mr-2"> +91
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+880"
+                                          data-flag="../images/money-flag/bangladesh.png">
+                                          <img src="../images/money-flag/bangladesh.png" alt="Bangladesh" class="w-10 h-10 mr-2"> +880
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+92"
+                                          data-flag="../images/money-flag/pakistan.png">
+                                          <img src="../images/money-flag/pakistan.png" alt="palistan" class="w-10 h-10 mr-2"> +92
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+94"
+                                          data-flag="../images/money-flag/sri-lanka.png">
+                                          <img src="../images/money-flag/sri-lanka.png" alt="palistan" class="w-10 h-10 mr-2"> +94
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+977" data-flag="../images/money-flag/nepal.png">
+                                          <img src="../images/money-flag/nepal.png" alt="palistan" class="w-10 h-10 mr-2"> +977
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+60"
+                                          data-flag="../images/money-flag/malaysia.png">
+                                          <img src="../images/money-flag/malaysia.png" alt="palistan" class="w-10 h-10 mr-2"> +60
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+63"
+                                          data-flag="../images/money-flag/phillipine.png">
+                                          <img src="../images/money-flag/phillipine.png" alt="palistan" class="w-10 h-10 mr-2"> +63
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+84"
+                                          data-flag="../images/money-flag/viatnam.png">
+                                          <img src="../images/money-flag/viatnam.png" alt="palistan" class="w-10 h-10 mr-2"> +84
+                                        </li>
+                                        <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-[#003C74]"
+                                          onclick="selectCountryCode(this)" data-code="+679" data-flag="../images/money-flag/fiji.png">
+                                          <img src="../images/money-flag/fiji.png" alt="palistan" class="w-10 h-10 mr-2"> +679
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <input type="tel" id="phone"
+                                    class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+                                    placeholder="00000000">
+                                </div>
+                              </div>
+                            <button class="w-full bg-[#AFD6F7] hover:bg-green-600 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                              Get download Link
+                            </button>
+                          </div>
+                    </div>
+        
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-[#E3E3E3] py-10 text-white relative ">
+            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
+                <!-- Column 1 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><img src="../images/footer-logo.png" alt="VeloxPays Logo" class="w-20 mt-4"></li>
+                    </ul>
+                </div>
+                <!-- Column 1 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">About</a></li>
+                        <li><a href="#" class="hover:underline text-black">Careers</a></li>
+                        <li><a href="#" class="hover:underline text-black">Blogs</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Question</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">How it works</a></li>
+                        <li><a href="#" class="hover:underline text-black">Help Center</a></li>
+                        <li><a href="#" class="hover:underline text-black">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline text-black">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Services</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Money Transfer</a></li>
+                        <li><a href="#" class="hover:underline text-black">Business</a></li>
+                        <li><a href="#" class="hover:underline text-black">Currency Converter</a></li>
+                        <li><a href="#" class="hover:underline text-black">Complaints</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-black">Connect</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">LinkedIn</a></li>
+                        <li><a href="#" class="hover:underline text-black">Instagram</a></li>
+                        <li><a href="#" class="hover:underline text-black">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <footer class="bg-[#E3E3E3] py-2 text-white relative">
+            <div class="container">
+                <hr class="bg-white h-[2px] border-0 opacity-80">
+            </div>
+        </footer>
+        <footer class="bg-[#E3E3E3]  text-white relative ">
+            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
+
+                <!-- Column 2 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Legal
+                                Complaints</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Country site map</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="flex-1">
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-black">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:underline text-black">Modern slavery statement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center py-2 mt-8 bg-purple-secondary">
+                <p class="text-sm text-white ">Social Remit All rights reserved &copy;2024</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>

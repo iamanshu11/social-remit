@@ -1,0 +1,14 @@
+
+body
+{
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin: auto;
+}
+
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+
