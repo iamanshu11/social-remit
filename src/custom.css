@@ -12,3 +12,14 @@ body
     display: block;
   }
 
+  .swiper-container-flipped {
+    transform: scaleX(-1);
+}
+
+.swiper-container-flipped .swiper-slide {
+    transform: scaleX(-1);
+}
+
+.tilt-parent {
+    perspective: 1000px; /* Apply to the parent container if needed */
+}

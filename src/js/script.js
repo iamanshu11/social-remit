@@ -250,22 +250,66 @@ document.addEventListener('click', (event) => {
 
 
 // *********** slider  **************************** 
-const swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  loop: true,
-  breakpoints: {
-      640: {
-          slidesPerView: 1,
-      },
-      768: {
-          slidesPerView: 2,
-      },
-      1024: {
-          slidesPerView: 4,
-      },
-  },
+document.addEventListener("DOMContentLoaded", function() {
+  // Right to Left Swiper
+  const swiperRTL = new Swiper('.swiper-container-rtl', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    rtl: true,  // Ensures movement from right to left
+    autoplay: {
+        delay: 0, // Continuous effect
+        disableOnInteraction: false
+    },
+    speed: 3000,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+  });
+
+  // Left to Right Swiper
+  const swiperLTR = new Swiper('.swiper-container-ltr', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    rtl: false,  // Ensures default movement from left to right
+    autoplay: {
+        delay: 0, // Continuous effect
+        disableOnInteraction: false
+    },
+    speed: 3000,
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
+    },
+  });
+
+  // Event listeners for hover to pause/resume autoplay
+  const swiperContainerRTL = document.querySelector('.swiper-container-rtl');
+  swiperContainerRTL.onmouseenter = () => swiperRTL.autoplay.stop();
+  swiperContainerRTL.onmouseleave = () => swiperRTL.autoplay.start();
+
+  const swiperContainerLTR = document.querySelector('.swiper-container-ltr');
+  swiperContainerLTR.onmouseenter = () => swiperLTR.autoplay.stop();
+  swiperContainerLTR.onmouseleave = () => swiperLTR.autoplay.start();
 });
+
+
 
 // *********** box-input  **************************** 
 function moveFocus(event, inputIndex) {
@@ -363,3 +407,85 @@ document.addEventListener('click', function(event) {
   }
 });
 
+// *********** Countable **************************** 
+
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start).toLocaleString() + "+";
+      if (progress < 1) {
+          window.requestAnimationFrame(step);
+      }
+  };
+  window.requestAnimationFrame(step);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const userCount = document.getElementById('userCount');
+  if (userCount) {
+      animateValue(userCount, 0, 5000000, 8000); // Increased duration from 4000ms to 8000ms
+  }
+
+  const visaCount = document.getElementById('visaCount');
+  if (visaCount) {
+      animateValue(visaCount, 0, 1000000, 8000); // Increased duration from 4000ms to 8000ms
+  }
+
+  const companyCount = document.getElementById('companyCount');
+  if (companyCount) {
+      animateValue(companyCount, 0, 60000, 8000); // Increased duration from 4000ms to 8000ms
+  }
+
+  const transactionCount = document.getElementById('transactionCount');
+  if (transactionCount) {
+      animateValue(transactionCount, 0, 250000, 8000); // Increased duration from 4000ms to 8000ms
+  }
+});
+
+
+// *********** Card-tilt **************************** 
+var cards = document.querySelectorAll('.card-tilt');
+
+cards.forEach(card => {
+  var mouseHover = false;
+  var mousePosition = { x: 0, y: 0 };
+  var cardSize = { width: 0, height: 0 };
+  var SCALE_X = 8;
+  var SCALE_Y = 10;
+
+  card.onblur = function() {
+    mouseHover = false;
+  };
+
+  card.onfocus = function() {
+    mouseHover = true;
+  };
+
+  card.onmousemove = function(e) {
+    if (!mouseHover) return;
+    var rect = card.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    mousePosition = { x, y };
+    cardSize = {
+      width: card.offsetWidth || 0,
+      height: card.offsetHeight || 0,
+    };
+    card.style.transform = `perspective(1000px) rotateX(${
+      (mousePosition.y / cardSize.height) * -(SCALE_Y * 2) + SCALE_Y
+    }deg) rotateY(${
+      (mousePosition.x / cardSize.width) * (SCALE_X * 2) - SCALE_X
+    }deg) translateZ(10px)`;
+  };
+
+  card.onmouseout = function() {
+    mouseHover = false;
+    card.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+  };
+
+  card.onmouseover = function() {
+    mouseHover = true;
+  };
+});
