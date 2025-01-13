@@ -193,13 +193,6 @@ function togglePassword(fieldId, iconId, imgId) {
 }
 
 
-
-
-
-
-
-
-
 // Toggle the country code list dropdown
 function toggleCountryCodeList(event) {
   event.stopPropagation();
@@ -222,31 +215,73 @@ function filterCountryCodes(event) {
   });
 }
 
-// Select country code and update the flag and code (only on button)
-function selectCountryCode(element) {
-  const phoneFlag = document.getElementById('phone-flag');
-  const countryCode = document.getElementById('country-code');
+document.addEventListener('DOMContentLoaded', () => {
+  // Toggle country code dropdown
+  document.querySelectorAll('.country-code-btn').forEach(button => {
+    button.addEventListener('click', event => {
+      const dropdown = event.currentTarget.closest('.phone-input, .phone-input-old').querySelector('.country-code-list');
+      dropdown.classList.toggle('hidden');
+    });
+  });
 
-  const flagSrc = element.getAttribute('data-flag');
-  const code = element.getAttribute('data-code');
+  // Select country code
+  document.querySelectorAll('.country-option').forEach(option => {
+    option.addEventListener('click', event => {
+      const parent = event.currentTarget.closest('.phone-input, .phone-input-old');
+      const flag = parent.querySelector('.phone-flag');
+      const code = parent.querySelector('.country-code');
 
-  phoneFlag.src = flagSrc;
-  countryCode.textContent = code;
+      const flagSrc = event.currentTarget.getAttribute('data-flag');
+      const countryCode = event.currentTarget.getAttribute('data-code');
 
-  // Close the dropdown after selection
-  const countryCodeList = document.getElementById('country-code-list');
-  countryCodeList.classList.add('hidden');
-}
+      flag.src = flagSrc;
+      code.textContent = countryCode;
 
-// Close dropdown if clicked outside
-document.addEventListener('click', (event) => {
-  const countryCodeList = document.getElementById('country-code-list');
-  const dropdownButton = event.target.closest('button');
+      // Close dropdown after selection
+      const dropdown = parent.querySelector('.country-code-list');
+      dropdown.classList.add('hidden');
+    });
+  });
 
-  if (!countryCodeList.classList.contains('hidden') && !dropdownButton) {
-    countryCodeList.classList.add('hidden');
-  }
+  // Close dropdown if clicked outside
+  document.addEventListener('click', event => {
+    document.querySelectorAll('.country-code-list').forEach(dropdown => {
+      if (!dropdown.contains(event.target) && !dropdown.previousElementSibling.contains(event.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  });
 });
+
+
+
+
+// *********** slider  **************************** 
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // Makes pagination dots clickable
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 
 
 // *********** slider  **************************** 
