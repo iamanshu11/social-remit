@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Remit</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="../dist/output.css" rel="stylesheet">
     <link href="../src/custom.css" rel="stylesheet">
 </head>
@@ -96,7 +96,7 @@
                 <a href="#" class="bg-secondary text-white px-4 py-2 rounded">Sign Up</a>
             </div>
 
-     
+
             <button class="md:hidden text-black" id="burger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" id="burger-icon">
@@ -186,13 +186,12 @@
 
     <main>
 
-        <section class="min-h-screen h-auto   bg-[#fff] text-white pt-120 bg-cover bg-no-repeat pb-6">
+        <section class=" h-auto   bg-[#fff] text-white pt-120 py-16  pb-6">
             <div class="container px-10 mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
                 <!-- Left Section -->
                 <div class="lg:w-1/2 mb-12 lg:mb-0">
                     <div class="text-left space-y-4 lg:w-full">
-                        <h1 class="text-3xl lg:text-5xl font-bold text-primary">Your money work better <br>
-                            when it’s all in one app. </h1>
+                        <h1 class="text-3xl lg:text-5xl font-bold text-primary">Your money work better <br> when it’s all in one app. </h1>
                         <img src="../images/tag-line.png" alt="" class="">
                         <form class="relative lg:w-1/2 bg-primary px-5 py-2.5 rounded-lg">
                             <div class=" relative mt-2">
@@ -322,8 +321,8 @@
                                     <input type="tel" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 phone-number" placeholder="00000000">
                                 </div>
                             </div>
-                            
-                            
+
+
                         </div>
 
                         <button class="lg:w-1/2 w-full bg-secondary text-white text-lg font-medium py-4 mt-6 rounded-lg hover:bg-[#003C74] hover:text-[#fff]">
@@ -334,9 +333,10 @@
 
                 </div>
 
-                <div class="lg:w-1/2 flex flex-col items-center mt-10 lg:mt-0 relative">
-                    <video src="../images/mobile.mp4" autoplay loop muted class="h-auto bg-white"></video>
+                <div class="hidden lg:flex lg:w-1/2 flex-col items-center mt-10 lg:mt-0 relative bg-cover bg-no-repeat" style="background-image: url('../images/banner-bg.png')">
+                    <video src="../images/mobile.mp4" playshine autoplay loop muted class="h-auto bg-white"></video>
                 </div>
+
             </div>
         </section>
 
@@ -347,7 +347,8 @@
                         <div>
                             <p>Social Remit</p>
                         </div>
-                        <hr class="block sm:hidden w-full border-t border-gray-400 my-2"> <!-- Ensuring full width and visible border color -->
+                        <hr class="block sm:hidden w-full border-t border-gray-400 my-2">
+                        <!-- Ensuring full width and visible border color -->
                         <div>
                             <span id="userCount" class="font-semibold text-lg">0</span>
                             <p>User</p>
@@ -368,34 +369,32 @@
                             <p>Secure Transactions per day</p>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
         </section>
 
         <section class="py-6 bg-white">
-            <div class="container mx-auto px-4 py-8">
+            <div class="container mx-auto px-10 py-8">
                 <div class="flex flex-col lg:flex-row items-center">
                     <!-- Image Section -->
                     <div class="flex-1 relative group">
                         <!-- Main Image -->
                         <img src="../images/social-human.png" alt="Happy person using phone" class="rounded-lg">
-        
+
                         <!-- First Absolute Image -->
-                        <div
-                            class="absolute top-[43%] left-[66%] z-[9] opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-500 ease-in-out delay-100">
+                        <div class="absolute top-[43%] left-[66%] z-[9] opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-500 ease-in-out delay-100">
                             <img src="../images/farme-1.png" alt="Frame 1" class="rounded-lg">
                         </div>
-        
+
                         <!-- Second Absolute Image -->
-                        <div
-                            class="absolute top-[33%] left-[70%] opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-500 ease-in-out delay-300">
+                        <div class="absolute top-[33%] left-[70%] opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-500 ease-in-out delay-300">
                             <img src="../images/farme-1.png" alt="Frame 2" class="rounded-lg">
                         </div>
                     </div>
-        
-        
+
+
                     <!-- Text and Button Section -->
                     <div class="flex-1 mt-6 lg:mt-0 lg:ml-6 text-center lg:text-left">
                         <p class="text-xl font-bold text-gray-800 mb-8">
@@ -411,77 +410,55 @@
                             <img src="../images/flag/img-6.png" alt="UK" class="w-8 h-8">
                             <img src="../images/flag/img-7.png" alt="UK" class="w-8 h-8">
                         </div>
-        
-                        <h2 class="font-bold text-primary text-4xl mb-3">Bridging the Distance,<br>
-                            one transaction at a
-                            time
+
+                        <h2 class="font-bold text-primary text-4xl mb-3">Bridging the Distance,<br> one transaction at a time
                         </h2>
-        
+
                         <!-- Phone Input Component -->
-                        <div class="mt-8 mb-4 w-1/2  mx-auto sm:mx-0 phone-input">
+                        <div class="mt-8 mb-4 lg:w-1/2 sm:w-1/3  mx-auto sm:mx-0 phone-input">
                             <div class="mt-1 flex border border-gray-300 rounded-md shadow-sm">
                                 <div class="relative flex-shrink-0">
-                                    <button type="button"
-                                        class="flex items-center px-4 pr-8 py-2 focus:outline-none country-code-btn">
+                                    <button type="button" class="flex items-center px-4 pr-8 py-2 focus:outline-none country-code-btn">
                                         <img class="phone-flag w-6 h-6 mr-2" src="../images/money-flag/ghana.png" alt="Ghana">
                                         <span class="country-code">+233</span>
                                     </button>
                                     <!-- Country Code Dropdown -->
-                                    <div
-                                        class="absolute z-10 bg-[#003C74] border rounded-md mt-1 max-h-60 overflow-y-auto hidden country-code-list">
-                                        <input type="text"
-                                            class="w-full px-3 py-2 bg-white text-gray-800 border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 search-input"
-                                            placeholder="Search...">
+                                    <div class="absolute z-10 bg-[#003C74] border rounded-md mt-1 max-h-60 overflow-y-auto hidden country-code-list">
+                                        <input type="text" class="w-full px-3 py-2 bg-white text-gray-800 border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 search-input" placeholder="Search...">
                                         <ul class="mt-2 country-code-options">
                                             <!-- Example Country Options -->
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+233" data-flag="../images/money-flag/ghana.png">
-                                                <img src="../images/money-flag/ghana.png" alt="Ghana" class="w-10 h-10 mr-2">
-                                                Ghana (+233)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+233" data-flag="../images/money-flag/ghana.png">
+                                                <img src="../images/money-flag/ghana.png" alt="Ghana" class="w-10 h-10 mr-2"> Ghana (+233)
                                             </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+91" data-flag="../images/money-flag/india.png">
-                                                <img src="../images/money-flag/india.png" alt="India" class="w-10 h-10 mr-2">
-                                                India (+91)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+91" data-flag="../images/money-flag/india.png">
+                                                <img src="../images/money-flag/india.png" alt="India" class="w-10 h-10 mr-2"> India (+91)
                                             </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+880" data-flag="../images/money-flag/bangladesh.png">
-                                                <img src="../images/money-flag/bangladesh.png" alt="Bangladesh"
-                                                    class="w-10 h-10 mr-2"> Bangladesh (+880)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+880" data-flag="../images/money-flag/bangladesh.png">
+                                                <img src="../images/money-flag/bangladesh.png" alt="Bangladesh" class="w-10 h-10 mr-2"> Bangladesh (+880)
                                             </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+92" data-flag="../images/money-flag/pakistan.png">
-                                                <img src="../images/money-flag/pakistan.png" alt="Pakistan"
-                                                    class="w-10 h-10 mr-2"> Pakistan (+92)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+92" data-flag="../images/money-flag/pakistan.png">
+                                                <img src="../images/money-flag/pakistan.png" alt="Pakistan" class="w-10 h-10 mr-2"> Pakistan (+92)
                                             </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+94" data-flag="../images/money-flag/sri-lanka.png">
-                                                <img src="../images/money-flag/sri-lanka.png" alt="Sri Lanka"
-                                                    class="w-10 h-10 mr-2"> Sri Lanka (+94)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+94" data-flag="../images/money-flag/sri-lanka.png">
+                                                <img src="../images/money-flag/sri-lanka.png" alt="Sri Lanka" class="w-10 h-10 mr-2"> Sri Lanka (+94)
                                             </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+977" data-flag="../images/money-flag/nepal.png">
-                                                <img src="../images/money-flag/nepal.png" alt="Nepal" class="w-10 h-10 mr-2">
-                                                Nepal (+977)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+977" data-flag="../images/money-flag/nepal.png">
+                                                <img src="../images/money-flag/nepal.png" alt="Nepal" class="w-10 h-10 mr-2"> Nepal (+977)
                                             </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option"
-                                                data-code="+60" data-flag="../images/money-flag/malaysia.png">
-                                                <img src="../images/money-flag/malaysia.png" alt="Malaysia"
-                                                    class="w-10 h-10 mr-2"> Malaysia (+60)
+                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+60" data-flag="../images/money-flag/malaysia.png">
+                                                <img src="../images/money-flag/malaysia.png" alt="Malaysia" class="w-10 h-10 mr-2"> Malaysia (+60)
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <input type="tel"
-                                    class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 phone-number"
-                                    placeholder="Enter your phone number">
+                                <input type="tel" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 phone-number" placeholder="Enter your phone number">
                             </div>
                         </div>
-        
-        
-        
-        
-        
+
+
+
+
+
                         <div class="flex justify-center lg:justify-start">
                             <button class="bg-secondary  text-white font-bold py-2 px-4 rounded shadow-lg">
                                 Get download Link
@@ -492,36 +469,39 @@
             </div>
         </section>
 
-        
+
 
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4 py-12 flex flex-col items-center">
                 <!-- Main Heading -->
                 <h1 class="text-3xl lg:text-5xl font-bold text-primary text-center mb-10">Powerful Solution engineered for global business</h1>
-                
+
                 <!-- Cards Container -->
                 <div class="flex flex-wrap justify-center gap-6">
                     <!-- Card 1 -->
-                    <div  class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"  data-tilt>
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"
+                        data-tilt>
                         <h2 class="font-semibold text-xl text-center text-white mb-3">International Money <br> Transfer</h2>
                         <p class="text-center text-white">All-in-one business accounts to collect, manage, and move money globally</p>
                         <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary  transition-colors">
                             Explore +
                         </button>
                     </div>
-                    
-        
+
+
                     <!-- Card 2 -->
-                    <div  class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"  data-tilt>
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"
+                        data-tilt>
                         <h2 class="font-semibold text-xl text-center text-white mb-3">Easily Request <br> Payment</h2>
                         <p class="text-center text-white">Online payment acceptance to grow your international customer base</p>
                         <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary  transition-colors">
                             Explore +
                         </button>
                     </div>
-        
+
                     <!-- Card 3 -->
-                    <div  class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"  data-tilt>
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"
+                        data-tilt>
                         <h2 class="font-semibold text-xl text-center text-white mb-3">Airtime <br> Top-up</h2>
                         <p class="text-center text-white">Powerful and flexible APIs to programmatically manage your money</p>
                         <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary transition-colors">
@@ -539,151 +519,155 @@
                     </h1>
                 </div>
                 <div class="mx-auto flex flex-col md:flex-row items-center gap-6 mt-10">
-                     <!-- Image Section -->
-                <div class="md:w-1/2 flex justify-center mt-8 md:mt-0 px-4 card-tilt transform-gpu backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer">
-                    <img src="../images/social-phone.png" alt="Phone " class="w-full">
-                </div>
+                    <!-- Image Section -->
+                    <div class="md:w-1/2 flex justify-center mt-8 md:mt-0 px-4 card-tilt transform-gpu backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer">
+                        <img src="../images/social-phone.png" alt="Phone " class="w-full">
+                    </div>
 
                     <!-- Text Section -->
-                <div class="md:w-1/2 text-center md:text-left px-4">
-                    <h1 class="text-3xl md:text-5xl font-bold text-primary">
-                        Security is at <br> our core
-                    </h1>
-                    <p class="mt-4 text-gray-700">
-                        Don’t worry we know how you feel save that’s why we have a security expert with us.
-                    </p>
-                </div>
+                    <div class="md:w-1/2 text-center md:text-left px-4">
+                        <h1 class="text-3xl md:text-5xl font-bold text-primary">
+                            Security is at <br> our core
+                        </h1>
+                        <p class="mt-4 text-gray-700">
+                            Don’t worry we know how you feel save that’s why we have a security expert with us.
+                        </p>
+                    </div>
                 </div>
         </section>
 
         <section class="py-16 bg-white">
-            <div class="container mx-auto">
+            <div class="container mx-auto px-10">
                 <div class="text-center">
                     <h1 class="text-3xl lg:text-5xl font-bold text-primary">Why choose Us
                     </h1>
                     <p class="mt-4 text-black">Why Business of all sizes choose Social Remit</p>
                 </div>
-        
-                <!-- Carousel Section -->
-                <div class="mt-12 overflow-hidden relative">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <!-- Card 1 -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="bg-[#1A90FF] text-white rounded-[20px] p-6 w-80">
-                                    <h3 class="text-2xl text-center font-semibold">Simple</h3>
-                                    <p class="mt-2 text-center">No bank queues or lengthy paperwork – get set up online
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Card 2 -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="bg-[#1A90FF] text-white rounded-[20px] p-6 w-80">
-                                    <h3 class="text-2xl text-center font-semibold">Lightning fast</h3>
-                                    <p class="mt-2 text-center">Over 85% of transfers arrive within the same day
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Card 3 -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="bg-[#1A90FF] text-white rounded-[20px] p-6 w-80">
-                                    <h3 class="text-2xl text-center font-semibold">Safe & reliable</h3>
-                                    <p class="mt-2 text-center">Our security is based on the highest international standards
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Card 4 -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="bg-[#1A90FF] text-white rounded-[20px] p-6 w-80">
-                                    <h3 class="text-2xl text-center font-semibold">Peace of mind</h3>
-                                    <p class="mt-2 text-center">We worry about global compliance so you don’t have to
-                                    </p>
-                                </div>
-                            </div>
-        
-                            <!-- Card 5 -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="bg-[#1A90FF] text-white rounded-[20px] p-6 w-80">
-                                    <h3 class="text-2xl text-center font-semibold">Cost effective</h3>
-                                    <p class="mt-2 text-center">Cut out needless FX fees and improve your profit margins
-                                    </p>
-                                </div>
-                            </div>
 
-                            <!-- Card 5 -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="bg-[#1A90FF] text-white rounded-[20px] p-6 w-80">
-                                    <h3 class="text-2xl text-center font-semibold">We don't do 
-                                        bots fast</h3>
-                                    <p class="mt-2 text-center">Our award winning service team is ready to help
-                                    </p>
-                                </div>
-                            </div>
+                <div class="flex flex-wrap justify-center mt-8 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
+                        data-tilt>
+                        <div class="group">
+                            <img src="../images/choose/img-1.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
                         </div>
+                        <h2 class="font-semibold text-xl text-center text-white mb-3">Simple</h2>
+                        <p class="text-center text-white">No bank queues or lengthy paperwork – get set up online</p>
                     </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
+                        data-tilt>
+                        <div class="group">
+                            <img src="../images/choose/img-2.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-white mb-3">Lightning fast</h2>
+                        <p class="text-center text-white">Over 85% of transfers arrive within the same day</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
+                        data-tilt>
+                        <div class="group">
+                            <img src="../images/choose/img-3.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-white mb-3">Peace of mind</h2>
+                        <p class="text-center text-white">We worry about global compliance so you don’t have to</p>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap justify-center mt-8 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
+                        data-tilt>
+                        <div class="group">
+                            <img src="../images/choose/img-4.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-white mb-3">Safe & reliable</h2>
+                        <p class="text-center text-white">Our security is based on the highest international standards</p>
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
+                        data-tilt>
+                        <div class="group">
+                            <img src="../images/choose/img-5.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-white mb-3">We don't do bots fast</h2>
+                        <p class="text-center text-white">Our award winning service team is ready to help</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
+                        data-tilt>
+                        <div class="group">
+                            <img src="../images/choose/img-6.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-white mb-3">Cost effective</h2>
+                        <p class="text-center text-white">Cut out needless FX fees and improve your profit margins</p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="py-16 bg-primary">
-            <div class="container mx-auto">
+        <section class="py-16 bg-[#EBEBEB]">
+            <div class="container mx-auto px-10">
                 <div class="container mx-auto px-4">
                     <!-- Heading and Description -->
                     <div class="w-full lg:w-1/2 mb-10">
-                        <h1 class="text-3xl lg:text-5xl font-bold text-white mb-4">Why do customer love Social Remit ❤️</h1>
-                        <p class="text-lg text-white">
-                            Local payments network offers you a faster, more cost-effective, and transparent alternative to legacy banking. Operate like a local business from anywhere in the world – open accounts with local bank details in minutes, accept payments in local currency to avoid costly forced conversion fees, hold funds in a multi-currency wallet, convert currencies at interbank rates, and make high-speed transfers around the world in a few clicks.
+                        <h1 class="text-3xl lg:text-5xl font-bold text-primary mb-4">Why do customer love Social Remit ❤️</h1>
+                        <p class="text-lg text-black">
+                            Local payments network offers you a faster, more cost-effective, and transparent alternative to legacy banking. Operate like a local business from anywhere in the world – open accounts with local bank details in minutes, accept payments in local currency
+                            to avoid costly forced conversion fees, hold funds in a multi-currency wallet, convert currencies at interbank rates, and make high-speed transfers around the world in a few clicks.
                         </p>
                     </div>
-            
+
                     <!-- Features Section -->
                     <div class="flex flex-wrap justify-center gap-8">
                         <!-- Feature 1 -->
-                        <div class="flex flex-col items-center w-72"> <!-- Updated width -->
+                        <div class="flex flex-col items-center w-72">
+                            <!-- Updated width -->
                             <div class="">
                                 <div class="card-tilt transform-gpu">
                                     <img src="../images/social-circle/img-1.png" alt="Description" class=" object-cover">
                                 </div>
                             </div>
-                            <h3 class="text-2xl text-white text-center font-semibold mt-3">
-                                Complimentary member <br> benefits
-                            </h3>
-                            <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary  transition-colors">
+                            <!-- <button class="mt-4 bg-transparent text-black px-6 py-2 border border-black rounded hover:bg-primary  transition-colors">
                                 Explore +
-                            </button>
+                            </button> -->
                         </div>
-                    
+
                         <!-- Feature 2 -->
-                        <div class="flex flex-col items-center w-72"> <!-- Updated width -->
+                        <div class="flex flex-col items-center w-72">
+                            <!-- Updated width -->
                             <div class="">
                                 <div class="card-tilt transform-gpu">
                                     <img src="../images/social-circle/img-2.png" alt="Description" class=" object-cover">
                                 </div>
                             </div>
-                            <h3 class="text-2xl text-white text-center font-semibold mt-3">
-                                Help when you <br> need it
-                            </h3>
-                            <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary  transition-colors">
+                            <!-- <button class="mt-4 bg-transparent text-black px-6 py-2 border border-black rounded hover:bg-primary  transition-colors">
                                 Explore +
-                            </button>
+                            </button> -->
                         </div>
-                    
+
                         <!-- Feature 3 -->
-                        <div class="flex flex-col items-center w-72"> <!-- Updated width -->
+                        <div class="flex flex-col items-center w-72">
+                            <!-- Updated width -->
                             <div class="">
                                 <div class="card-tilt transform-gpu">
                                     <img src="../images/social-circle/img-3.png" alt="Description" class=" object-cover">
                                 </div>
                             </div>
-                            <h3 class="text-2xl text-white text-center font-semibold mt-3">
-                                Complimentary member <br> benefits
-                            </h3>
-                            <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary transition-colors">
+                            <!-- <button class="mt-4 bg-transparent text-black px-6 py-2 border border-black rounded hover:bg-primary transition-colors">
                                 Explore +
-                            </button>
+                            </button> -->
                         </div>
                     </div>
-                    
+
 
                 </div>
             </div>
@@ -691,7 +675,7 @@
 
 
         <section class="py-16 bg-white">
-            <div class="container mx-auto">
+            <div class="container mx-auto px-10">
                 <div class="text-center">
                     <h1 class="text-3xl lg:text-5xl font-bold text-primary">Trusted ❤️ by 150,000+ People, <br> here what they says
                     </h1>
@@ -762,7 +746,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -830,7 +814,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -838,92 +822,126 @@
         </section>
 
         <!-- Footer Section -->
-        <footer class= "bg-primary py-10 text-white relative ">
-            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
+        <footer class="bg-primary py-10 text-white relative ">
+            <div class="container mx-auto px-10">
                 <!-- Column 1 -->
-                <div class="flex-1">
+                <div class="mb-8">
                     <ul class="mt-4 space-y-2">
                         <li><img src="../images/footer-logo.png" alt="VeloxPays Logo" class="w-30 mt-4"></li>
                     </ul>
                 </div>
-                <!-- Column 1 -->
+
+                <div class="flex flex-col md:flex-row flex-wrap gap-8">
+                    <!-- Column 1 -->
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-lg text-white">Business Accounts</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:underline text-white">Business Accounts Overview</a></li>
+                            <li><a href="#" class="hover:underline text-white">Global Accounts</a></li>
+                            <li><a href="#" class="hover:underline text-white">FX & Transfers</a></li>
+                            <li><a href="#" class="hover:underline text-white">Borderless </a></li>
+                            <li><a href="#" class="hover:underline text-white">Cards</a></li>
+                            <li><a href="#" class="hover:underline text-white">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-lg text-white">Spend</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:underline text-white">Spend Overview</a></li>
+                            <li><a href="#" class="hover:underline text-white">Borderless Cards</a></li>
+                            <li><a href="#" class="hover:underline text-white">Expense Management</a></li>
+                            <li><a href="#" class="hover:underline text-white">Bill Pay</a></li>
+                            <li><a href="#" class="hover:underline text-white">Integrations</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-lg text-white">Payments</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:underline text-white">Payments Overview</a></li>
+                            <li><a href="#" class="hover:underline text-white">Checkout</a></li>
+                            <li><a href="#" class="hover:underline text-white">Payment links & Plugins</a></li>
+                        </ul>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-lg text-white">Embedded Finance</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:underline text-white">Embedded Finance Overview</a></li>
+                            <li><a href="#" class="hover:underline text-white">Global Treasury</a></li>
+                            <li><a href="#" class="hover:underline text-white">Payments for Platforms</a></li>
+                            <li><a href="#" class="hover:underline text-white">Banking as a Service</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-lg text-white">Core API</h3>
+                        <ul class="mt-4 space-y-2">
+                            <li><a href="#" class="hover:underline text-white">Core API Overview</a></li>
+                            <li><a href="#" class="hover:underline text-white">Transactional FX</a></li>
+                            <li><a href="#" class="hover:underline text-white">Payouts</a></li>
+                            <li><a href="#" class="hover:underline text-white">Issuing</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <footer class="bg-primary  text-white relative px-10 py-4">
+            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 mb-6 ">
+
                 <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Company</h3>
+                    <h3 class="font-semibold text-lg text-white">Plans</h3>
                     <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">About</a></li>
+                        <li><a href="#" class="hover:underline text-white">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-white">Developers</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-white">Product documentation</a></li>
+                        <li><a href="#" class="hover:underline text-white">API Reference</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-white">About us</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:underline text-white">who we are </a></li>
+                        <li><a href="#" class="hover:underline text-white">Operating principles </a></li>
+                        <li><a href="#" class="hover:underline text-white">Terms & policies </a></li>
+                        <li><a href="#" class="hover:underline text-white">Cookie Preference Centre </a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-white">Join Us</h3>
+                    <ul class="mt-4 space-y-2">
                         <li><a href="#" class="hover:underline text-white">Careers</a></li>
-                        <li><a href="#" class="hover:underline text-white">Blogs</a></li>
-                    </ul>
-                </div>
-                <!-- Column 2 -->
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Question</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">How it works</a></li>
-                        <li><a href="#" class="hover:underline text-white">Help Center</a></li>
-                        <li><a href="#" class="hover:underline text-white">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:underline text-white">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <!-- Column 3 -->
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Services</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Money Transfer</a></li>
-                        <li><a href="#" class="hover:underline text-white">Business</a></li>
-                        <li><a href="#" class="hover:underline text-white">Currency Converter</a></li>
-                        <li><a href="#" class="hover:underline text-white">Complaints</a></li>
-                    </ul>
-                </div>
-                <!-- Column 4 -->
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Connect</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">LinkedIn</a></li>
-                        <li><a href="#" class="hover:underline text-white">Instagram</a></li>
-                        <li><a href="#" class="hover:underline text-white">Twitter</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <footer class="bg-primary py-2 text-white relative">
-            <div class="container">
-                <hr class="bg-white h-[2px] border-0 opacity-80">
-            </div>
-        </footer>
-        <footer class="bg-primary  text-white relative ">
-            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 px-6 md:px-12">
-
-                <div class="flex-1">
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Legal
-                                Complaints</a></li>
+                        <li><a href="#" class="hover:underline text-white">Partnership program</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 2 -->
                 <div class="flex-1">
+                    <h3 class="font-semibold text-lg text-white">Resources</h3>
                     <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Legal
-                                Complaints</a></li>
-                    </ul>
-                </div>
-                <!-- Column 3 -->
-                <div class="flex-1">
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Country site map</a></li>
-                    </ul>
-                </div>
-                <!-- Column 4 -->
-                <div class="flex-1">
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Cookie Policy</a></li>
-                        <li><a href="#" class="hover:underline text-white">Modern slavery statement</a></li>
+                        <li><a href="#" class="hover:underline text-white">Blog</a></li>
+                        <li><a href="#" class="hover:underline text-white">Newsroom</a></li>
+                        <li><a href="#" class="hover:underline text-white">FAQ</a></li>
+                        <li><a href="#" class="hover:underline text-white">Support</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center py-2 mt-8 bg-primary">
-                <p class="text-sm text-white ">Social Remit All rights reserved &copy;2024</p>
+            <footer class="bg-primary py-2 text-white relative">
+                <div class="container">
+                    <hr class="bg-white h-[2px] border-0 opacity-80">
+                </div>
+            </footer>
+            <div class=" bg-primary">
+                <p class="text-sm text-white ">© Social Remit 2024. All rights reserved.</p>
             </div>
         </footer>
 
@@ -932,7 +950,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillatilt@latest"></script>
     <script src="../src/js/script.js"></script>
-    
+
 
 
 
