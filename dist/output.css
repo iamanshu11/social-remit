@@ -878,16 +878,16 @@ html,
   justify-content: space-between;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
 .gap-6{
   gap: 1.5rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -1579,10 +1579,6 @@ html,
 
   .lg\:flex{
     display: flex;
-  }
-
-  .lg\:hidden{
-    display: none;
   }
 
   .lg\:w-1\/2{
