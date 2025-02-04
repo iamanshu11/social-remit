@@ -7,23 +7,27 @@
     <title>Social Remit</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" rel="stylesheet">
     <link href="../dist/output.css" rel="stylesheet">
     <link href="../src/custom.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+    <header class="bg-white  shadow-sm fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 md:px-12 flex justify-between items-center py-4">
             <!-- Logo Section -->
-            <div class="flex items-center space-x-4">
-                <img src="../images/logo.png" alt="VeloxPays Logo" class="" width="150px" />
+            <div class=" flex items-center  space-x-4">
+                <a href="index.html"><img src="../images/logo.png" alt="social remit Logo" class="" width="120px" />
+                </a>
+
             </div>
 
-            <div class="hidden  md:flex items-center space-x-4">
+
+            <div class="hidden  lg:flex items-center space-x-4">
                 <nav class="flex gap-4">
                     <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                        <button class="flex items-center text-black hover:text-primary">
-                            Send Money
+                        <button class="flex items-center dark:text-primary text-primary hover:text-primary">
+                            English
                             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7" />
@@ -31,26 +35,15 @@
                         </button>
 
                         <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 2</a>
+                            <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
+                            <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 2</a>
                         </div>
                     </div>
-                    <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                        <button class="flex items-center text-black hover:text-primary">
-                            Track Your Transfer
-                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
+                    <a href="track-your-transfer.html" class=" text-secondary hover:text-primary">Track Your Transfer</a>
 
-                        <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 2</a>
-                        </div>
-                    </div>
+
                     <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                        <button class="flex items-center text-black hover:text-primary">
+                        <button class="flex items-center text-secondary hover:text-primary">
                             Products
                             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,13 +52,13 @@
                         </button>
 
                         <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 2</a>
+                            <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
+                            <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 2</a>
                         </div>
                     </div>
-                    <a href="#" class="text-black hover:text-primary">Help center</a>
+                    <a href="#" class=" text-secondary hover:text-primary">Help center</a>
                     <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                        <button class="flex items-center text-black hover:text-primary">
+                        <button class="flex items-center  text-secondary hover:text-primary">
                         Company
                         <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -73,28 +66,18 @@
                     </button>
 
                         <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
+                            <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
+                            <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
                         </div>
                     </div>
-                    <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                        <button class="flex items-center text-black hover:text-primary">
-                        Impact Hub
-                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
 
-                        <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
-                        </div>
-                    </div>
+                    <a href="#" class=" text-secondary hover:text-primary">Impact Hub</a>
+
                 </nav>
             </div>
 
             <!-- Navigation Links for Desktop -->
-            <div class="hidden md:flex items-center space-x-4">
+            <div class="hidden lg:flex items-center space-x-4">
                 <!-- <a href="#" class="text-gray-700 ">Help center</a>
                 <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
                     <button class="flex items-center text-gray-600 hover:text-gray-900">
@@ -122,12 +105,23 @@
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
                     </div>
                 </div> -->
-                <a href="#" class="text-gray-700 hover:text-blue-700">Login</a>
-                <a href="#" class="bg-secondary text-white px-4 py-2 rounded">Sign Up</a>
+
+                <a href="sign-up.html" class="bg-secondary dark:bg-primary text-white px-4 py-3 rounded-[15px] flex gap-4"><span class="font-bold  ">Sign up</span>
+                </a>
+
+
+
+                <!-- <a href="#" class="bg-secondary text-white px-4 py-2 rounded-[10px] flex gap-4"><span class="font-bold  ">Download
+                        App</span>
+                    <div class="flex items-center gap-2">
+                        <img src="../images/social-apple.png" alt="" class="">
+                        <img src="../images/social-playstore.png" alt="" class="">
+                    </div>
+                </a> -->
             </div>
 
 
-            <button class="md:hidden text-black" id="burger-menu">
+            <button class="lg:hidden text-secondary " id="burger-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" id="burger-icon">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -140,61 +134,39 @@
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md hidden z-40">
+        <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white  shadow-md hidden z-40">
             <div class="flex flex-col items-center space-y-4 py-6">
                 <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                    <button class="flex items-center text-gray-600 hover:text-gray-900">
-                        Send Money
+                    <button class="flex items-center z-10  text-secondary hover:text-primary">
+                        English
                         <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
-                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    <div class="dropdown-menu absolute hidden z-9 bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 1</a>
+                        <a href="coming-soon.html" class="block px-4 py-2 text-sm text-black hover:text-primary">Submenu 2</a>
                     </div>
                 </div>
+                <a href="track-your-transfer.html" class="  text-secondary  hover:text-gray-900">Track Your Transfer</a>
                 <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                    <button class="flex items-center text-gray-600 hover:text-gray-900">
-                        Track Your Transfer
-                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-
-                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
-                    </div>
-                </div>
-                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                    <button class="flex items-center z-10  text-secondary hover:text-gray-900">
                         Products
                         <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
-                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                    <div class="dropdown-menu absolute hidden z-9 bg-white shadow-lg mt-1 rounded-md w-48">
+                        <a href="coming-soon.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="coming-soon.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
                     </div>
                 </div>
-                <a href="#" class="p-4 text-gray-600 hover:text-gray-900">Help Center</a>
+                <a href="#" class=" text-secondary hover:text-gray-900">Help Center</a>
+
                 <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                    <button class="flex items-center text-gray-600 hover:text-gray-900">
-                        Help center
-                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
-                    </div>
-                </div>
-                <div class="relative dropdown" onmouseover="this.children[1].style.display = 'block';" onmouseout="this.children[1].style.display = 'none';">
-                    <button class="flex items-center text-gray-600 hover:text-gray-900">
+                    <button class="flex items-center  text-secondary hover:text-gray-900">
                        Company
                         <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -202,787 +174,217 @@
                     </button>
 
                     <div class="dropdown-menu absolute hidden bg-white shadow-lg mt-1 rounded-md w-48">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
+                        <a href="coming-soon.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 1</a>
+                        <a href="coming-soon.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Submenu 2</a>
                     </div>
                 </div>
-                <a href="#" class="p-4 text-blue-500 hover:text-blue-700">Login</a>
-                <a href="#" class="p-4 bg-secondary text-white rounded hover:bg-blue-700">Sign Up</a>
+                <a href="#" class=" text-secondary hover:text-gray-900">Impact Hub</a>
+                <a href="#" class="bg-secondary dark:bg-primary text-white px-4 py-3 rounded-[15px] flex gap-4"><span class="font-bold  ">Sign up</span>
+                </a>
             </div>
         </div>
     </header>
 
-
-
     <main>
-
-        <section class=" h-auto   bg-[#fff] text-white pt-120 py-16  pb-6">
-            <div class="container px-10 mx-auto flex flex-col lg:flex-row items-center lg:justify-between">
-                <!-- Left Section -->
-                <div class="lg:w-1/2 mb-12 lg:mb-0">
-                    <div class="text-left space-y-4 lg:w-full">
-                        <h1 class="text-3xl lg:text-5xl font-bold text-primary">Your money work better <br> when it’s all in one app. </h1>
-                        <img src="../images/tag-line.png" alt="" class="">
-                        <form class="relative lg:w-1/2 bg-primary px-5 py-2.5 rounded-lg">
-                            <div class=" relative mt-2">
-                                <label for="amount" class="block text-sm font-medium text-black px-2">SEND MONEY</label>
-                                <div class="flex items-center  rounded-[20px] mt-2 relative bg-gray-50">
-                                    <input type="text" id="amount" placeholder=" ₵ 2500" class="w-full text-[22px] bg-gray-50 px-3 py-3  text-gray-800 focus:outline-none rounded-[20px] " />
-                                    <button type="button" id="currency-button" class="inline-flex items-center bg-gray-50 px-4 py-4 rounded-r-[20px]  focus:outline-none relative w-full max-w-max" onclick="toggleDropdown('currency-dropdown')">
-                                        <img src="../images/money-flag/ghana.png" alt="GHS Flag" class="h-8 mr-2"
-                                            id="selected-flag" />
-                                        <span id="selected-currency" class="text-sm font-medium mr-2 text-[#003C74]">GHS</span>
-                                        <svg id="dropdown-icon" class="w-5 h-5 text-[#003C74] ml-2 transition-transform transform"
-                                            fill="currentColor" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-
-                                </div>
-
-                                <!-- Currency Dropdown -->
-                                <div id="currency-dropdown" class="hidden absolute top-full left-0 w-full border border-gray-300 bg-[#003C74] rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
-                                    <div class="p-2">
-                                        <input type="text" id="currency-search" placeholder="Search currency..." class="w-full px-3 py-2 border rounded-md focus:outline-none" oninput="filterDropdown('currency-dropdown', 'currency-search')" />
-                                    </div>
-                                    <ul class="divide-y divide-gray-200">
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/australia.png', 'GHS')">
-                                            <img src="../images/money-flag/ghana.png" alt="GHS Flag" class="h-8 mr-2" />
-                                            <span>GHS - Ghanaian Cedi</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/australia.png', 'AUD')">
-                                            <img src="../images/money-flag/australia.png" alt="AUD Flag" class="h-8 mr-2" />
-                                            <span>AUD - Australian Dollar</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/bangladesh.png', 'BDT')">
-                                            <img src="../images/money-flag/bangladesh.png" alt="BDT Flag" class="h-8 mr-2" />
-                                            <span>BDT - Bangladeshi Taka</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/india.png', 'INR')">
-                                            <img src="../images/money-flag/india.png" alt="INR Flag" class="h-8 mr-2" />
-                                            <span>INR - Indian Rupee</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/pakistan.png', 'PKR')">
-                                            <img src="../images/money-flag/pakistan.png" alt="PAK Flag" class="h-8 mr-2" />
-                                            <span>PKR - Pakistani Rupee </span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/nepal.png', 'NPR')">
-                                            <img src="../images/money-flag/nepal.png" alt="NGN Flag" class="h-8 mr-2" />
-                                            <span>NPR - Nepalese Rupee</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/sri-lanka.png', 'LKR')">
-                                            <img src="../images/money-flag/sri-lanka.png" alt="LKR Flag" class="h-8 mr-2" />
-                                            <span>LKR - Sri Lankan Rupee</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/malaysia.png', 'MYR')">
-                                            <img src="../images/money-flag/malaysia.png" alt="MYR Flag" class="h-8 mr-2" />
-                                            <span>MYR - Malaysian Ringgit</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/phillipine.png', 'PHP')">
-                                            <img src="../images/money-flag/phillipine.png" alt="PHP Flag" class="h-8 mr-2" />
-                                            <span>PHP - Philippine Peso</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/viatnam.png', 'VND')">
-                                            <img src="../images/money-flag/viatnam.png" alt="VND Flag" class="h-8 mr-2" />
-                                            <span>VND - Vietnamese Dong</span>
-                                        </li>
-                                        <li class="p-2 flex items-center hover:bg-[#003C74] cursor-pointer" onclick="selectCurrency('../images/money-flag/fiji.png', 'FJD')">
-                                            <img src="../images/money-flag/fiji.png" alt="FJD Flag" class="h-8 mr-2" />
-                                            <span>FJD - Fijian dollar</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                        <button class="lg:w-1/2 w-full bg-secondary text-white text-lg font-medium py-4 mt-6 rounded-lg hover:bg-[#003C74] hover:text-[#fff]">
-                            Check Rates
-                          </button>
-                        <div class="bg-primary rounded-lg p-4 text-white lg:w-1/2  my-4">
-                            <div class="flex  mb-4">
-                                <span class="font-bold text-[#003C74] ">Download App</span>
-                                <div class="flex items-center">
-                                    <img src="../images/social-apple.png" alt="" class="">
-                                    <img src="../images/social-playstore.png" alt="" class="">
-                                </div>
-                            </div>
-                            <div class="flex space-x-2 mb-4">
-                                <button class="bg-[#D9EAFA] hover:bg-blue-800 hover:text-white text-primary font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">SMS</button>
-                                <button class=" border border-white rounded hover:bg-[#D9EAFA] hover:text-primary text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline">Email</button>
-                            </div>
-
-                            <div class="mb-4  phone-input">
-                                <div class="mt-1 flex border border-gray-300 rounded-md shadow-sm">
-                                    <div class="relative flex-shrink-0">
-                                        <button type="button" class="flex items-center px-4 pr-8 py-2 focus:outline-none country-code-btn">
-                                            <img class="phone-flag w-6 h-6 mr-2" src="../images/money-flag/ghana.png" alt="Ghana">
-                                            <span class="country-code">+233</span>
-                                        </button>
-                                        <!-- Dropdown -->
-                                        <div class="absolute z-10 bg-[#003C74] border rounded-md mt-1 max-h-60 overflow-y-auto hidden country-code-list">
-                                            <!-- Search Bar -->
-                                            <input type="text" class="w-full px-3 py-2 bg-white text-gray-800 border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 search-input" placeholder="Search...">
-                                            <ul class="country-code-options">
-                                                <!-- Country Options -->
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+233" data-flag="../images/money-flag/ghana.png">
-                                                    <img src="../images/money-flag/ghana.png" alt="Ghana" class="w-10 h-10 mr-2"> Ghana (+233)
-                                                </li>
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+91" data-flag="../images/money-flag/india.png">
-                                                    <img src="../images/money-flag/india.png" alt="India" class="w-10 h-10 mr-2"> India (+91)
-                                                </li>
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+880" data-flag="../images/money-flag/bangladesh.png">
-                                                    <img src="../images/money-flag/bangladesh.png" alt="Bangladesh" class="w-10 h-10 mr-2"> Bangladesh (+880)
-                                                </li>
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+92" data-flag="../images/money-flag/pakistan.png">
-                                                    <img src="../images/money-flag/pakistan.png" alt="Pakistan" class="w-10 h-10 mr-2"> Pakistan (+92)
-                                                </li>
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+94" data-flag="../images/money-flag/sri-lanka.png">
-                                                    <img src="../images/money-flag/sri-lanka.png" alt="Sri Lanka" class="w-10 h-10 mr-2"> Sri Lanka (+94)
-                                                </li>
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+977" data-flag="../images/money-flag/nepal.png">
-                                                    <img src="../images/money-flag/nepal.png" alt="Nepal" class="w-10 h-10 mr-2"> Nepal (+977)
-                                                </li>
-                                                <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+60" data-flag="../images/money-flag/malaysia.png">
-                                                    <img src="../images/money-flag/malaysia.png" alt="Malaysia" class="w-10 h-10 mr-2"> Malaysia (+60)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="tel" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 phone-number" placeholder="00000000">
-                                </div>
-                            </div>
+        <section class="relative py-16 overflow-hidden">
 
 
-                        </div>
-
-                        <button class="lg:w-1/2 w-full bg-secondary text-white text-lg font-medium py-4 mt-6 rounded-lg hover:bg-[#003C74] hover:text-[#fff]">
-                            Get download Link
-                          </button>
-                    </div>
-
-
-                </div>
-
-                <div class="hidden lg:flex lg:w-1/2 flex-col items-center mt-10 lg:mt-0 relative bg-cover bg-no-repeat" style="background-image: url('../images/banner-bg.png')">
-                    <video src="../images/mobile.mp4" playshine autoplay loop muted class="h-auto bg-white"></video>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="py-6 bg-[#00A1CC]">
-            <div class="container mx-auto px-10">
-                <div class="container mx-auto px-4 py-4 text-white">
-                    <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-center">
-                        <div>
-                            <img src="../images/footer-logo.png" alt="VeloxPays Logo" class="" width="50px" />
-                        </div>
-                        <hr class="block sm:hidden w-full border-t border-gray-400 my-2">
-                        <!-- Ensuring full width and visible border color -->
-                        <div>
-                            <span id="userCount" class="font-semibold text-lg">0</span>
-                            <p>User</p>
-                        </div>
-                        <hr class="block sm:hidden w-full border-t border-gray-400 my-2">
-                        <div>
-                            <span id="visaCount" class="font-semibold text-lg">0</span>
-                            <p>Virtual visa issues</p>
-                        </div>
-                        <hr class="block sm:hidden w-full border-t border-gray-400 my-2">
-                        <div>
-                            <span id="companyCount" class="font-semibold text-lg">0</span>
-                            <p>Global public companies to invest in</p>
-                        </div>
-                        <hr class="block sm:hidden w-full border-t border-gray-400 my-2">
-                        <div>
-                            <span id="transactionCount" class="font-semibold text-lg">0</span>
-                            <p>Secure Transactions per day</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-        <section class="py-6 bg-white">
-            <div class="container mx-auto px-10 py-8">
-                <div class="flex flex-col lg:flex-row items-center">
-                    <!-- Image Section -->
-                    <div class="flex-1 relative group">
-                        <!-- Main Image -->
-                        <img src="../images/social-human.png" alt="Happy person using phone" class="rounded-lg">
-
-                        <!-- First Absolute Image -->
-                        <div class="absolute top-[43%] left-[66%] z-[9] opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-500 ease-in-out delay-100">
-                            <img src="../images/farme-1.png" alt="Frame 1" class="rounded-lg">
-                        </div>
-
-                        <!-- Second Absolute Image -->
-                        <div class="absolute top-[33%] left-[70%] opacity-0 transform scale-90 group-hover:opacity-100 group-hover:scale-100 transition-opacity duration-500 ease-in-out delay-300">
-                            <img src="../images/farme-1.png" alt="Frame 2" class="rounded-lg">
-                        </div>
-                    </div>
-
-
-                    <!-- Text and Button Section -->
-                    <div class="flex-1 mt-6 lg:mt-0 lg:ml-6 text-center lg:text-left">
-                        <p class="text-xl font-bold text-gray-800 mb-8">
-                            Available countries tou can send money from to
-                        </p>
-                        <!-- Flags -->
-                        <div class="flex justify-center lg:justify-start space-x-2 mb-4">
-                            <img src="../images/flag/img-1.png" alt="UK" class="w-8 h-8">
-                            <img src="../images/flag/img-2.png" alt="UK" class="w-8 h-8">
-                            <img src="../images/flag/img-3.png" alt="UK" class="w-8 h-8">
-                            <img src="../images/flag/img-4.png" alt="UK" class="w-8 h-8">
-                            <img src="../images/flag/img-5.png" alt="UK" class="w-8 h-8">
-                            <img src="../images/flag/img-6.png" alt="UK" class="w-8 h-8">
-                            <img src="../images/flag/img-7.png" alt="UK" class="w-8 h-8">
-                        </div>
-
-                        <h2 class="font-bold text-primary text-4xl mb-3">Bridging the Distance,<br> one transaction at a time
-                        </h2>
-
-                        <!-- Phone Input Component -->
-                        <div class="mt-8 mb-4 lg:w-1/2 sm:w-1/3  mx-auto sm:mx-0 phone-input">
-                            <div class="mt-1 flex border border-gray-300 rounded-md shadow-sm">
-                                <div class="relative flex-shrink-0">
-                                    <button type="button" class="flex items-center px-4 pr-8 py-2 focus:outline-none country-code-btn">
-                                        <img class="phone-flag w-6 h-6 mr-2" src="../images/money-flag/ghana.png" alt="Ghana">
-                                        <span class="country-code">+233</span>
-                                    </button>
-                                    <!-- Country Code Dropdown -->
-                                    <div class="absolute z-10 bg-[#003C74] border rounded-md mt-1 max-h-60 overflow-y-auto hidden country-code-list">
-                                        <input type="text" class="w-full px-3 py-2 bg-white text-gray-800 border-b border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 search-input" placeholder="Search...">
-                                        <ul class="mt-2 country-code-options">
-                                            <!-- Example Country Options -->
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+233" data-flag="../images/money-flag/ghana.png">
-                                                <img src="../images/money-flag/ghana.png" alt="Ghana" class="w-10 h-10 mr-2"> Ghana (+233)
-                                            </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+91" data-flag="../images/money-flag/india.png">
-                                                <img src="../images/money-flag/india.png" alt="India" class="w-10 h-10 mr-2"> India (+91)
-                                            </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+880" data-flag="../images/money-flag/bangladesh.png">
-                                                <img src="../images/money-flag/bangladesh.png" alt="Bangladesh" class="w-10 h-10 mr-2"> Bangladesh (+880)
-                                            </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+92" data-flag="../images/money-flag/pakistan.png">
-                                                <img src="../images/money-flag/pakistan.png" alt="Pakistan" class="w-10 h-10 mr-2"> Pakistan (+92)
-                                            </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+94" data-flag="../images/money-flag/sri-lanka.png">
-                                                <img src="../images/money-flag/sri-lanka.png" alt="Sri Lanka" class="w-10 h-10 mr-2"> Sri Lanka (+94)
-                                            </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+977" data-flag="../images/money-flag/nepal.png">
-                                                <img src="../images/money-flag/nepal.png" alt="Nepal" class="w-10 h-10 mr-2"> Nepal (+977)
-                                            </li>
-                                            <li class="flex items-center px-4 pr-12 py-2 cursor-pointer hover:bg-blue-500 text-white country-option" data-code="+60" data-flag="../images/money-flag/malaysia.png">
-                                                <img src="../images/money-flag/malaysia.png" alt="Malaysia" class="w-10 h-10 mr-2"> Malaysia (+60)
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <input type="tel" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 phone-number" placeholder="Enter your phone number">
-                            </div>
-                        </div>
-
-
-
-
-
-                        <div class="flex justify-center lg:justify-start">
-                            <button class="bg-secondary  text-white font-bold py-2 px-4 rounded shadow-lg">
-                                Get download Link
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="py-16 bg-white">
+            <!-- Main Content -->
             <div class="container mx-auto px-4 py-12 flex flex-col items-center">
-                <!-- Main Heading -->
-                <h1 class="text-3xl lg:text-5xl font-bold text-primary text-center mb-10">Powerful Solution engineered for global business</h1>
+                <!-- Background Blur -->
+                <div class="relative w-full max-w-lg mx-auto mb-5">
+                    <!-- Background Blur Inside the Div -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#0DD5FF] to-[#0090CE] blur-3xl  rounded-2xl"></div>
 
-                <!-- Cards Container -->
-                <div class="flex flex-wrap justify-center gap-6">
-                    <!-- Card 1 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">International Money <br> Transfer</h2>
-                        <p class="text-center text-white">All-in-one business accounts to collect, manage, and move money globally</p>
-                        <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary  transition-colors">
-                            Explore +
-                        </button>
-                    </div>
-
-
-                    <!-- Card 2 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Easily Request <br> Payment</h2>
-                        <p class="text-center text-white">Online payment acceptance to grow your international customer base</p>
-                        <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary  transition-colors">
-                            Explore +
-                        </button>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Airtime <br> Top-up</h2>
-                        <p class="text-center text-white">Powerful and flexible APIs to programmatically manage your money</p>
-                        <button class="mt-4 bg-transparent text-white px-6 py-2 border border-white rounded hover:bg-primary transition-colors">
-                            Explore +
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-10">
-                <div class="text-center">
-                    <h1 class="text-3xl lg:text-5xl font-bold text-primary">Fast, secure transfers to support your <br> loved ones or empower communities in need.
-                    </h1>
-                </div>
-                <div class="mx-auto flex flex-col md:flex-row items-center gap-6 mt-10">
-                    <!-- Image Section -->
-                    <div class="md:w-1/2 flex justify-center mt-8 md:mt-0 px-4 card-tilt transform-gpu backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer">
-                        <img src="../images/social-phone.png" alt="Phone " class="w-full">
-                    </div>
-
-                    <!-- Text Section -->
-                    <div class="md:w-1/2 text-center md:text-left px-4">
-                        <h1 class="text-3xl md:text-5xl font-bold text-primary">
-                            Security is at <br> our core
-                        </h1>
-                        <p class="mt-4 text-gray-700">
-                            Don’t worry we know how you feel save that’s why we have a security expert with us.
-                        </p>
-                    </div>
-                </div>
-        </section>
-
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-10">
-                <div class="text-center">
-                    <h1 class="text-3xl lg:text-5xl font-bold text-primary">Why choose Us
-                    </h1>
-                    <p class="mt-4 text-black">Why Business of all sizes choose Social Remit</p>
-                </div>
-
-                <div class="flex flex-wrap justify-center mt-8 gap-6">
-                    <!-- Card 1 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <div class="group">
-                            <img src="../images/choose/img-1.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
-                        </div>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Simple</h2>
-                        <p class="text-center text-white">No bank queues or lengthy paperwork – get set up online</p>
-                    </div>
-
-
-                    <!-- Card 2 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <div class="group">
-                            <img src="../images/choose/img-2.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
-                        </div>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Lightning fast</h2>
-                        <p class="text-center text-white">Over 85% of transfers arrive within the same day</p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <div class="group">
-                            <img src="../images/choose/img-3.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
-                        </div>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Peace of mind</h2>
-                        <p class="text-center text-white">We worry about global compliance so you don’t have to</p>
-                    </div>
-
-                </div>
-
-                <div class="flex flex-wrap justify-center mt-8 gap-6">
-                    <!-- Card 1 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <div class="group">
-                            <img src="../images/choose/img-4.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
-                        </div>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Safe & reliable</h2>
-                        <p class="text-center text-white">Our security is based on the highest international standards</p>
-                    </div>
-
-
-                    <!-- Card 2 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <div class="group">
-                            <img src="../images/choose/img-5.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
-                        </div>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">We don't do bots fast</h2>
-                        <p class="text-center text-white">Our award winning service team is ready to help</p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card-tilt transform-gpu place-items-center   ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-[#1A90FF] p-6 pb-16 rounded-tr-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-md w-full md:w-1/4 card"
-                        data-tilt>
-                        <div class="group">
-                            <img src="../images/choose/img-6.png" class="mb-4 transform transition duration-500 group-hover:scale-110 group-hover:rotate-3">
-                        </div>
-                        <h2 class="font-semibold text-xl text-center text-white mb-3">Cost effective</h2>
-                        <p class="text-center text-white">Cut out needless FX fees and improve your profit margins</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16 bg-[#EBEBEB]">
-            <div class="container mx-auto px-10">
-                <div class="container mx-auto px-4">
-                    <!-- Heading and Description -->
-                    <div class="w-full lg:w-1/2 mb-10">
-                        <h1 class="text-3xl lg:text-5xl font-bold text-primary mb-4">Why do customer love Social Remit ❤️</h1>
-                        <p class="text-lg text-black">
-                            Local payments network offers you a faster, more cost-effective, and transparent alternative to legacy banking. Operate like a local business from anywhere in the world – open accounts with local bank details in minutes, accept payments in local currency
-                            to avoid costly forced conversion fees, hold funds in a multi-currency wallet, convert currencies at interbank rates, and make high-speed transfers around the world in a few clicks.
-                        </p>
-                    </div>
-
-                    <!-- Features Section -->
-                    <div class="flex flex-wrap justify-center gap-8">
-                        <!-- Feature 1 -->
-                        <div class="flex flex-col items-center w-72">
-                            <!-- Updated width -->
-                            <div class="">
-                                <div class="card-tilt transform-gpu">
-                                    <img src="../images/social-circle/img-1.png" alt="Description" class=" object-cover">
-                                </div>
+                    <!-- Content (kept clear and readable) -->
+                    <div class="relative bg-white p-6 rounded-2xl shadow-lg text-center">
+                        <h2 class="text-xl font-bold bg-gradient-to-r from-[#01B0DD]  to-[#0169CC] bg-clip-text text-transparent flex justify-center items-center gap-2">
+                            <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                </svg></span> LAUNCHING SOON <span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                                </svg></span>
+                        </h2>
+                        <div class="flex justify-center space-x-6 mt-4" id="countdown">
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl font-bold bg-gradient-to-r from-[#01B0DD]  to-[#0169CC] bg-clip-text text-transparent " id="days">00</span>
+                                <span class="text-sm text-[#000]">Days</span>
                             </div>
-                            <!-- <button class="mt-4 bg-transparent text-black px-6 py-2 border border-black rounded hover:bg-primary  transition-colors">
-                                Explore +
-                            </button> -->
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl font-bold bg-gradient-to-r from-[#01B0DD]  to-[#0169CC] bg-clip-text text-transparent" id="hours">00</span>
+                                <span class="text-sm text-[#000]">Hours</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl font-bold bg-gradient-to-r from-[#01B0DD]  to-[#0169CC] bg-clip-text text-transparent" id="minutes">00</span>
+                                <span class="text-sm text-[#000]">Minutes</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <span class="text-3xl font-bold bg-gradient-to-r from-[#01B0DD]  to-[#0169CC] bg-clip-text text-transparent" id="seconds">00</span>
+                                <span class="text-sm text-[#000]">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Main Heading -->
+                <h1 class="text-3xl lg:text-5xl font-bold text-[#1C1051] text-center mt-10 mb-5">Revolutionising <br> <span class="bg-gradient-to-r from-[#01B0DD]  to-[#0169CC] bg-clip-text text-transparent"> Remittances</span></h1>
+
+                <p class="text-center text-[#1F1645] mb-5">we’re building a faster, fairer, and more accessible way to send money home.</p>
+
+                <p class="text-center text-[#1F1645] mb-5">Join our waitlist for exclusive early access and benefits.</p>
+
+                <h4 class="text-2xl lg:text-3xl font-bold text-[#1C1051] text-center mt-5 mb-5">Be the First to Know</h4>
+
+                <p class="text-center text-[#1F1645] mb-5">Join our exclusive waitlist and receive early access benefits</p>
+
+                <div class="relative max-w-lg mx-auto mt-8">
+                    <!-- Glowing Background -->
+                    <div class="absolute inset-0 rounded-[10px] bg-gradient-to-r from-[#0DD5FF] to-[#0090CE] blur-md opacity-50"></div>
+
+                    <!-- Input Box -->
+                    <div class="relative flex flex-col md:flex-row items-center md:p-3 gap-2 md:gap-4">
+                        <!-- Email Input -->
+                        <div class="flex items-center flex-1 bg-white px-4 py-4 rounded-[10px]">
+                            <!-- Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE] mr-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                              </svg>
+
+                            <input type="email" placeholder="Enter your email address" class="flex-1 text-gray-800 focus:outline-none bg-transparent" />
+                        </div>
+
+                        <!-- Notify Button -->
+                        <button class="bg-gradient-to-r from-[#00B3DD] to-[#0075CF] text-white px-6 py-4 rounded-[10px] w-full md:w-auto">
+                            Notify Me →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="max-w-lg mx-auto mt-8">
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <!-- Feature 1 -->
+                        <div class="flex flex-col md:flex-row items-center gap-2 w-full md:w-[48%] text-center md:text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                              </svg>
+
+                            <span>Early access to platform</span>
                         </div>
 
                         <!-- Feature 2 -->
-                        <div class="flex flex-col items-center w-72">
-                            <!-- Updated width -->
-                            <div class="">
-                                <div class="card-tilt transform-gpu">
-                                    <img src="../images/social-circle/img-2.png" alt="Description" class=" object-cover">
-                                </div>
-                            </div>
-                            <!-- <button class="mt-4 bg-transparent text-black px-6 py-2 border border-black rounded hover:bg-primary  transition-colors">
-                                Explore +
-                            </button> -->
+                        <div class="flex flex-col md:flex-row items-center gap-2 w-full md:w-[48%] text-center md:text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                              </svg>
+
+                            <span>No fees on first transfer</span>
                         </div>
 
                         <!-- Feature 3 -->
-                        <div class="flex flex-col items-center w-72">
-                            <!-- Updated width -->
-                            <div class="">
-                                <div class="card-tilt transform-gpu">
-                                    <img src="../images/social-circle/img-3.png" alt="Description" class=" object-cover">
-                                </div>
-                            </div>
-                            <!-- <button class="mt-4 bg-transparent text-black px-6 py-2 border border-black rounded hover:bg-primary transition-colors">
-                                Explore +
-                            </button> -->
+                        <div class="flex flex-col md:flex-row items-center gap-2 w-full md:w-[48%] text-center md:text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                              </svg>
+
+                            <span>Launch day notifications</span>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="flex flex-col md:flex-row items-center gap-2 w-full md:w-[48%] text-center md:text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                              </svg>
+
+                            <span>Exclusive rewards</span>
+                        </div>
+
+                        <!-- Feature 5 -->
+                        <div class="flex flex-col md:flex-row items-center gap-2 w-full md:w-[48%] text-center md:text-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00AACE]">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                              </svg>
+
+                            <span>Exclusive rewards</span>
                         </div>
                     </div>
-
-
                 </div>
+
+
+                <!-- Cards Container -->
+                <div class="flex flex-col md:flex-row lg:flex-row justify-center mt-8 gap-6">
+                    <!-- Card 1 -->
+                    <div class="card-tilt transform-gpu place-items-center ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-transparent border border-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/3 card"
+                        data-tilt>
+                        <div class="mb-4 bg-gradient-to-r from-[#00B3DD] to-[#0075CF] p-2 rounded-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#fff]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                            </svg>
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-[#1F1645] mb-3">Global Coverage</h2>
+                        <p class="text-center text-[#003C74]">Send money to 50+ countries</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-tilt transform-gpu place-items-center ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-transparent border border-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/3 card"
+                        data-tilt>
+                        <div class="mb-4 bg-gradient-to-r from-[#00B3DD] to-[#0075CF] p-2 rounded-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#fff]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                            </svg>
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-[#1F1645] mb-3">Early Access</h2>
+                        <p class="text-center text-[#003C74]">Be amongst the first to try</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-tilt transform-gpu place-items-center ring-2 ring-gray-900/10 backdrop-blur-lg transition-all duration-300 ease-out cursor-pointer flex flex-col items-center justify-center bg-transparent border border-primary p-6 pb-16 rounded-lg shadow-md w-full md:w-1/3 card"
+                        data-tilt>
+                        <div class="mb-4 bg-gradient-to-r from-[#00B3DD] to-[#0075CF] p-2 rounded-[10px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#fff]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                            </svg>
+                        </div>
+                        <h2 class="font-semibold text-xl text-center text-[#1F1645] mb-3">Exclusive Benefits</h2>
+                        <p class="text-center text-[#003C74]">Special perks for early users</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6 p-4 mt-8">
+                    <div class="flex items-center bg-blue-50 px-6 py-3 rounded-full space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#00AACE]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z" />
+                      </svg>
+                        <span class="text-gray-700 font-medium">10,000+ Early Subscribers</span>
+                    </div>
+                    <div class="flex items-center bg-blue-50 px-6 py-3 rounded-full space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#00AACE]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                      </svg>
+                        <span class="text-gray-700 font-medium">4.9/5 Beta Rating</span>
+                    </div>
+                </div>
+
+                <p class="text-center text-[#1F1645] mt-5">Have questions? Contact us at <span class="text-primary">info@socialremit.co.uk</span> </p>
             </div>
         </section>
-
-
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-10">
-                <div class="text-center">
-                    <h1 class="text-3xl lg:text-5xl font-bold text-primary">Trusted ❤️ by 150,000+ People, <br> here what they says
-                    </h1>
-                </div>
-
-                <!-- Carousel Section -->
-                <div class="mt-12 overflow-hidden relative">
-                    <div class="swiper-container swiper-container-rtl  swiper-container-flipped">
-                        <div class="swiper-wrapper">
-                            <!-- Slides for RTL Swiper -->
-                            <!-- Each Slide -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-2.png" alt="Description" class="rounded-[20px]  object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-3.png" alt="Description" class=" rounded-[20px]  object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px]  transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-4.png" alt="Description" class="rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px]  transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-5.png" alt="Description" class=" rounded-[20px]  object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-1.png" alt="Description" class=" rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px]  transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-12 overflow-hidden relative">
-                    <div class="swiper-container swiper-container-ltr">
-                        <div class="swiper-wrapper">
-                            <!-- Each Slide -->
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-2.png" alt="Description" class="rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-3.png" alt="Description" class="rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-4.png" alt="Description" class="rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-5.png" alt="Description" class="rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide flex justify-center">
-                                <div class="relative">
-                                    <img src="../images/slider/img-1.png" alt="Description" class="rounded-[20px] object-cover">
-                                    <div class="absolute inset-0 bg-primary bg-opacity-0 hover:bg-opacity-75 flex items-center justify-center p-6 rounded-[20px] transition-opacity duration-300 ease-in-out">
-                                        <div class="text-white text-center transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100">
-                                            <h3 class="text-lg font-semibold">Mr Kumar</h3>
-                                            <p class="mt-2">“It is crazy to see that kind of technology...it's just one of those ideas where you think, why has this not been done before?”</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="bg-primary py-10 text-white relative ">
-            <div class="container mx-auto px-10">
-                <!-- Column 1 -->
-                <div class="mb-8">
-                    <ul class="mt-4 space-y-2">
-                        <li><img src="../images/footer-logo.png" alt="VeloxPays Logo" class="w-30 mt-4"></li>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col md:flex-row flex-wrap gap-8">
-                    <!-- Column 1 -->
-                    <div class="flex-1">
-                        <h3 class="font-semibold text-lg text-white">Business Accounts</h3>
-                        <ul class="mt-4 space-y-2">
-                            <li><a href="#" class="hover:underline text-white">Business Accounts Overview</a></li>
-                            <li><a href="#" class="hover:underline text-white">Global Accounts</a></li>
-                            <li><a href="#" class="hover:underline text-white">FX & Transfers</a></li>
-                            <li><a href="#" class="hover:underline text-white">Borderless </a></li>
-                            <li><a href="#" class="hover:underline text-white">Cards</a></li>
-                            <li><a href="#" class="hover:underline text-white">Integrations</a></li>
-                        </ul>
-                    </div>
-                    <!-- Column 2 -->
-                    <div class="flex-1">
-                        <h3 class="font-semibold text-lg text-white">Spend</h3>
-                        <ul class="mt-4 space-y-2">
-                            <li><a href="#" class="hover:underline text-white">Spend Overview</a></li>
-                            <li><a href="#" class="hover:underline text-white">Borderless Cards</a></li>
-                            <li><a href="#" class="hover:underline text-white">Expense Management</a></li>
-                            <li><a href="#" class="hover:underline text-white">Bill Pay</a></li>
-                            <li><a href="#" class="hover:underline text-white">Integrations</a></li>
-                        </ul>
-                    </div>
-                    <!-- Column 3 -->
-                    <div class="flex-1">
-                        <h3 class="font-semibold text-lg text-white">Payments</h3>
-                        <ul class="mt-4 space-y-2">
-                            <li><a href="#" class="hover:underline text-white">Payments Overview</a></li>
-                            <li><a href="#" class="hover:underline text-white">Checkout</a></li>
-                            <li><a href="#" class="hover:underline text-white">Payment links & Plugins</a></li>
-                        </ul>
-                    </div>
-                    <!-- Column 4 -->
-                    <div class="flex-1">
-                        <h3 class="font-semibold text-lg text-white">Embedded Finance</h3>
-                        <ul class="mt-4 space-y-2">
-                            <li><a href="#" class="hover:underline text-white">Embedded Finance Overview</a></li>
-                            <li><a href="#" class="hover:underline text-white">Global Treasury</a></li>
-                            <li><a href="#" class="hover:underline text-white">Payments for Platforms</a></li>
-                            <li><a href="#" class="hover:underline text-white">Banking as a Service</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="flex-1">
-                        <h3 class="font-semibold text-lg text-white">Core API</h3>
-                        <ul class="mt-4 space-y-2">
-                            <li><a href="#" class="hover:underline text-white">Core API Overview</a></li>
-                            <li><a href="#" class="hover:underline text-white">Transactional FX</a></li>
-                            <li><a href="#" class="hover:underline text-white">Payouts</a></li>
-                            <li><a href="#" class="hover:underline text-white">Issuing</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-        <footer class="bg-primary  text-white relative px-10 py-4">
-            <div class="container mx-auto flex flex-col md:flex-row flex-wrap gap-8 mb-6 ">
-
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Plans</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Pricing</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 2 -->
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Developers</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Product documentation</a></li>
-                        <li><a href="#" class="hover:underline text-white">API Reference</a></li>
-                    </ul>
-                </div>
-                <!-- Column 3 -->
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">About us</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">who we are </a></li>
-                        <li><a href="#" class="hover:underline text-white">Operating principles </a></li>
-                        <li><a href="#" class="hover:underline text-white">Terms & policies </a></li>
-                        <li><a href="#" class="hover:underline text-white">Cookie Preference Centre </a></li>
-                    </ul>
-                </div>
-                <!-- Column 4 -->
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Join Us</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Careers</a></li>
-                        <li><a href="#" class="hover:underline text-white">Partnership program</a></li>
-                    </ul>
-                </div>
-
-                <div class="flex-1">
-                    <h3 class="font-semibold text-lg text-white">Resources</h3>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:underline text-white">Blog</a></li>
-                        <li><a href="#" class="hover:underline text-white">Newsroom</a></li>
-                        <li><a href="#" class="hover:underline text-white">FAQ</a></li>
-                        <li><a href="#" class="hover:underline text-white">Support</a></li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="bg-primary py-2 text-white relative">
-                <div class="container">
-                    <hr class="bg-white h-[2px] border-0 opacity-80">
-                </div>
-            </footer>
-            <div class=" bg-primary">
-                <p class="text-sm text-white ">© Social Remit 2024. All rights reserved.</p>
-            </div>
-        </footer>
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillatilt@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js" integrity="sha384-DkJbDTY+uSHYNceDbBKr8o1DUWy8eLSoB3d9oz3x40m5VNS8U9WyT5NBO2UftcGz" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/dist/heroicons.min.js"></script>
+    <script src="../src/js/custom.js"></script>
     <script src="../src/js/script.js"></script>
-
-
-
 
 </body>
 
